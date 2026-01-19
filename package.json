@@ -1,0 +1,11 @@
+{
+  "name": "create-artifacts",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "seedrandom": "^3.0.5"
+  },
+  "scripts": {
+    "build": "bun build random-number-generator.js --compile --outfile random-number-generator-linux && bun build random-number-generator.js --compile --target bun-windows-x64 --outfile random-number-generator-windows.exe && bun build random-number-generator.js --compile --target bun-darwin-x64 --outfile random-number-generator-macos"
+  }
+}
